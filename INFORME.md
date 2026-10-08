@@ -31,3 +31,11 @@
     *   *Ejemplos:* C y Python (cuando se usa con bucles for/while clásicos).
 *   **Paradigma Declarativo:** Se le indica al ordenador *qué* resultado se quiere obtener, sin detallar el paso a paso interno.
     *   *Ejemplos:* SQL (se pide una tabla de resultados concreta) y HTML (se describe la estructura de la web, no cómo dibujarla).
+    ## Parte 2. Actividad práctica y de análisis
+
+### 2.1 Identificación de paradigmas de programación a partir de ejemplos
+
+*   **Fragmento 1:** **Imperativo**. Justificación: Se describe el "cómo" paso a paso. Hay un control explícito del flujo indicando que se debe recorrer la lista y sumar uno por uno.
+*   **Fragmento 2:** **Declarativo**. Justificación: Se describe el "qué" (empleados mayores de 30 años). Es el motor de la base de datos el que decide cómo buscar internamente sin que el programador defina los bucles.
+*   **Fragmento 3:** **Declarativo**. Justificación: Utiliza un enfoque funcional (recursividad matemática). Define qué es un factorial basándose en reglas lógicas y matemáticas, en lugar de explicar cómo iterar sobre los números.
+*   **Fragmento 4:** **Imperativo**. Justificación: Explica la mecánica detallada de comprobación (recorrer, comprobar producto a producto, filtrar). Es una instrucción paso a paso del flujo de ejecución.
