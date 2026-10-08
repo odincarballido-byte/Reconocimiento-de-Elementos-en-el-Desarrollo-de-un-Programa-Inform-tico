@@ -16,3 +16,18 @@
 4.  **Generación de código intermedio:** Se traduce a una representación independiente de la máquina, más fácil de optimizar.
 5.  **Optimización:** El compilador intenta hacer el código más rápido o eficiente (por ejemplo, si detecta que `a` siempre vale 2, podría cambiar la instrucción directamente a `suma = 7;`).
 6.  **Generación de código final:** Se traduce ese código optimizado al lenguaje máquina específico del procesador (Código Objeto).
+### 1.2 Clasificación de lenguajes de programación
+
+**Según su nivel de abstracción:**
+*   **Lenguajes de Alto Nivel:** Muy cercanos al lenguaje humano, ocultan la complejidad del hardware. 
+    *   *Ejemplos:* Python (muy legible, usado en IA y web) y Java (usado en aplicaciones empresariales y Android).
+*   **Lenguajes de Medio Nivel:** Permiten operaciones de alto nivel pero conservan el acceso directo a la memoria y al hardware.
+    *   *Ejemplos:* C y C++ (ideales para crear sistemas operativos o motores de videojuegos).
+*   **Lenguajes de Bajo Nivel:** Directamente inteligibles por la máquina o muy cercanos a ella. Dependen totalmente del hardware.
+    *   *Ejemplos:* Lenguaje Ensamblador (usa mnemotécnicos como ADD o MOV) y Lenguaje Máquina (código binario puro).
+
+**Según su paradigma:**
+*   **Paradigma Imperativo:** Se le indica al ordenador *cómo* debe hacer las cosas, detallando paso a paso el control del flujo (bucles, condicionales).
+    *   *Ejemplos:* C y Python (cuando se usa con bucles for/while clásicos).
+*   **Paradigma Declarativo:** Se le indica al ordenador *qué* resultado se quiere obtener, sin detallar el paso a paso interno.
+    *   *Ejemplos:* SQL (se pide una tabla de resultados concreta) y HTML (se describe la estructura de la web, no cómo dibujarla).
