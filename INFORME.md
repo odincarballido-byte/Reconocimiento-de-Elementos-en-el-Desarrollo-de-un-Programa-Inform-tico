@@ -39,3 +39,25 @@
 *   **Fragmento 2:** **Declarativo**. Justificación: Se describe el "qué" (empleados mayores de 30 años). Es el motor de la base de datos el que decide cómo buscar internamente sin que el programador defina los bucles.
 *   **Fragmento 3:** **Declarativo**. Justificación: Utiliza un enfoque funcional (recursividad matemática). Define qué es un factorial basándose en reglas lógicas y matemáticas, en lugar de explicar cómo iterar sobre los números.
 *   **Fragmento 4:** **Imperativo**. Justificación: Explica la mecánica detallada de comprobación (recorrer, comprobar producto a producto, filtrar). Es una instrucción paso a paso del flujo de ejecución.
+### 2.2 Actividad individual: imperativo vs. declarativo
+
+**Actividad elegida:** Preparar una tortilla francesa.
+
+*   **Descripción Imperativa:**
+    1. Abre la nevera y saca dos huevos.
+    2. Casca los huevos en un plato hondo.
+    3. Añade una pizca de sal.
+    4. Bate los huevos con un tenedor durante 30 segundos.
+    5. Pon una sartén al fuego medio.
+    6. Añade unas gotas de aceite y espera a que caliente.
+    7. Vierte el huevo batido.
+    8. Cuando los bordes estén cuajados, dobla la tortilla por la mitad.
+    9. Saca la tortilla al plato.
+
+*   **Descripción Declarativa:**
+    Quiero una tortilla francesa de dos huevos, bien cuajada por fuera y jugosa por dentro, servida en un plato.
+
+**Comparación:**
+El enfoque imperativo es muy preciso y garantiza que cualquier persona pueda replicar el proceso exacto, pero es largo de escribir y rígido (desventaja). El enfoque declarativo es mucho más rápido, directo y fácil de entender (ventaja), pero delega toda la responsabilidad de ejecución (el "cómo") en la persona o sistema que lo prepara; si no sabe hacer una tortilla, el resultado fallará (desventaja).
+
+**Palabra del día:** [COMPAÑEROS]
