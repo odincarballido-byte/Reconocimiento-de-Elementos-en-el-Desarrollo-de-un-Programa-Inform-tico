@@ -17,6 +17,6 @@
   <fiesta id="F03">
     <nombre>San Fermín en Pamplona</nombre>
     <ubicacion>Pamplona</ubicacion>
-    <puntuacion escala="puntos">7,5</puntuacion>
+    <puntuacion escala="puntos">7.5</puntuacion>
   </fiesta>
 </fiestas>
