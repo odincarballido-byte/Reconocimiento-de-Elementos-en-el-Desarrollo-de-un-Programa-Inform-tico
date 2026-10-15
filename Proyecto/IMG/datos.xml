@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Catálogo estructurado de fiestas populares españolas y sus puntuaciones por Daniel Odín Carballido Rodríguez -->
+<fiestas propietario="odincarballido-byte">
+  <fiesta id="F01">
+    <nombre>Feria de Sevilla</nombre>
+    <ubicacion>Sevilla</ubicacion>
+    <puntuacion escala="puntos">8</puntuacion>
+    <destacado/>
+  </fiesta>
+
+  <fiesta id="F02">
+    <nombre>Aste Nagusia de Bilbao</nombre>
+    <ubicacion>Bilbao</ubicacion>
+    <puntuacion escala="puntos">9.5</puntuacion>
+  </fiesta>
+
+  <fiesta id="F03">
+    <nombre>San Fermín en Pamplona</nombre>
+    <ubicacion>Pamplona</ubicacion>
+    <puntuacion escala="puntos">7,5</puntuacion>
+  </fiesta>
+</fiestas>
