@@ -9,3 +9,5 @@
 
 ## Qué he hecho en esta entrega
 En esta primera entrega he creado la página web principal (`index.html`) para mostrar las fiestas mejor valoradas con sus puntuaciones. Asimismo, he diseñado el archivo `datos.xml` para almacenar el catálogo de fiestas, sus puntuaciones numéricas y sus atributos correspondientes.
+
+- 
