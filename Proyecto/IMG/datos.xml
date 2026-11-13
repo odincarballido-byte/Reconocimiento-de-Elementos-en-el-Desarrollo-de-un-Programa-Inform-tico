@@ -25,6 +25,12 @@
     <fiesta id="F04">
         <nombre>Hogueras de Alicante</nombre>
         <ubicacion>Alicante</ubicacion>
-        <puntuacion escala="puntos">6</puntuacion>
+        <puntuacion escala="puntos">7.2</puntuacion>
+    </fiesta>
+
+    <fiesta id="F05">
+        <nombre>Carnaval de Cádiz</nombre>
+        <ubicacion>Cádiz</ubicacion>
+        <puntuacion escala="puntos">7.8</puntuacion>
     </fiesta>
 </fiestas>

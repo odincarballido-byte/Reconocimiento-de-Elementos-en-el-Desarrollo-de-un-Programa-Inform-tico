@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Reservas | Fiestas de España</title>
+    <meta name="description" content="Página de contacto oficial e inscripción para las Fiestas de España.">
+    <meta name="author" content="Daniel Odín Carballido Rodríguez">
+</head>
+<body>
+    <!-- BLOQUE CABECERA Y NAVEGACIÓN -->
+    <header>
+        <h1>Contacto y Asistencia a las Fiestas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="puntuaciones.html">Puntuaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- BLOQUE FORMULARIO DE CONTACTO -->
+    <main>
+        <section>
+            <h2>Formulario de Inscripci&#243;n y Consultas</h2>
+            <p>Rellene el siguiente formulario para ponerse en contacto con la organizaci&#243;n o solicitar informaci&#243;n de las fiestas populares.</p>
+
+            <!-- El formulario utiliza POST por seguridad, tras la prueba temporal con GET requerida -->
+            <form action="#" method="post">
+                
+                <!-- FIELDSET 1: DATOS PERSONALES -->
+                <fieldset>
+                    <legend>Tus Datos Personales</legend>
+                    
+                    <div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Od&#237;n Carballido" autofocus required minlength="3" maxlength="50">
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electr&#243;nico:</label>
+                        <input type="email" id="email" name="email" placeholder="usuario&#64;email.com" required>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Tel&#233;fono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="600123456" maxlength="9">
+                    </div>
+                </fieldset>
+
+                <!-- FIELDSET 2: PREFERENCIAS Y MENSAJE -->
+                <fieldset>
+                    <legend>Tu Consulta y Preferencias</legend>
+
+                    <div>
+                        <label for="festival-interes">Festival de inter&#233;s principal:</label>
+                        <select id="festival-interes" name="festival_interes" required>
+                            <option value="" disabled selected>-- Seleccione un festival --</option>
+                            <option value="fallas">Las Fallas &#40;Valencia&#41;</option>
+                            <option value="sevilla">Feria de Sevilla</option>
+                            <option value="sanfermin">San Ferm&#237;n &#40;Pamplona&#41;</option>
+                            <option value="astenagusia">Aste Nagusia &#40;Bilbao&#41;</option>
+                            <option value="hogueras">Hogueras de Alicante</option>
+                            <option value="cadiz">Carnaval de C&#225;diz</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Tipo de asistencia prevista:</p>
+                        <label><input type="radio" name="tipo_asistencia" value="presencial" checked> Presencial</label>
+                        <label><input type="radio" name="tipo_asistencia" value="virtual"> Seguir online</label>
+                        <label><input type="radio" name="tipo_asistencia" value="prensa"> Acreditaci&#243;n de prensa</label>
+                    </div>
+
+                    <div>
+                        <p>Desea recibir informaci&#243;n sobre:</p>
+                        <label><input type="checkbox" name="suscripcion_alertas" value="eventos" checked> Avisos de eventos</label>
+                        <label><input type="checkbox" name="suscripcion_alertas" value="precios"> Ofertas y alojamientos</label>
+                        <label><input type="checkbox" name="suscripcion_alertas" value="sorteos"> Sorteos de entradas</label>
+                    </div>
+
+                    <div>
+                        <label for="consulta">Escriba su mensaje o consulta:</label>
+                        <textarea id="consulta" name="consulta" rows="4" cols="50" placeholder="Escriba aqu&#237; los detalles de su solicitud..." required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- CONTROLES DE ENVIO Y RESETEO -->
+                <div>
+                    <button type="submit" name="submit">Enviar Solicitud</button>
+                    <button type="reset">Borrar Formulario</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- BLOQUE PIE DE PAGINA -->
+    <footer>
+        <p>&#169; 2026 Daniel Od&#237;n Carballido Rodr&#237;guez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
