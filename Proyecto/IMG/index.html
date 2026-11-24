@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-
-  <!-- BLOQUE CABECERA -->
-  <div>
-    <h1>Fiestas de España: Gu&#237;a y Puntuaci&#243;n</h1>
-    <p>El portal definitivo para evaluar las festividades tradicionales &amp; culturales de nuestra geograf&#237;a.</p>
-  </div>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio | Fiestas de España</title>
   <meta name="description" content="Portal oficial de puntuación y valoración de las fiestas populares más importantes de España.">
   <meta name="keywords" content="fiestas, España, feria, sevilla, astegusia, turismo">
-  <meta name="author" content="Daniel Odín Carballido Rodríguez">
+  <meta name="author" content="odincarballido-byte">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <!-- BLOQUE NAVEGACIÓN -->
+  <!-- Cabecera y navegación principal -->
   <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="puntuaciones.html">Puntuaciones</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+    <h1>Fiestas de España: Gu&#237;a y Puntuaci&#243;n</h1>
+    <p>El portal definitivo para evaluar las festividades tradicionales &amp; culturales de nuestra geograf&#237;a.</p>
+    <nav aria-label="Navegaci&#243;n principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="puntuaciones.html">Puntuaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
-  <hr>
 
-  <!-- BLOQUE PRESENTACION -->
-  <div>
-    <h2>Descubre los eventos mejor valorados</h2>
-    <p>En este portal nos encargamos de evaluar y <strong>puntuar las mejores fiestas</strong> que se celebran a lo largo de todo el territorio nacional, analizando criterios de calidad, afluencia y tradici&#243;n.</p>
-    
-    <img src="https://espanaweb.wordpress.com/wp-content/uploads/2016/05/fiestas.jpg" alt="Fiestas populares en España" width="600">
+  <main>
+    <section aria-labelledby="titulo-presentacion">
+      <h2 id="titulo-presentacion">Descubre los eventos mejor valorados</h2>
+      <p>En este portal nos encargamos de evaluar y <strong>puntuar las mejores fiestas</strong> que se celebran a lo largo de todo el territorio nacional, analizando criterios de calidad, afluencia y tradici&#243;n.</p>
 
-    <h2>Categor&#237;as principales</h2>
-    <div>
-      <h3>Fiestas de Inter&#233;s Tur&#237;stico Internacional</h3>
-      <p>Eventos con repercusión global que atraen a millones de visitantes cada año.</p>
-      <h3>Tradiciones Locales Destacadas</h3>
-      <p>Celebraciones arraigadas con un profundo valor histórico y antropológico.</p>
-    </div>
-  </div>
+      <figure>
+        <img src="https://espanaweb.wordpress.com/wp-content/uploads/2016/05/fiestas.jpg" alt="Fiestas populares en España" width="600">
+        <figcaption>Fiestas populares en Espa&#241;a.</figcaption>
+      </figure>
 
-  <hr>
+      <article>
+        <h3>Fiestas de Inter&#233;s Tur&#237;stico Internacional</h3>
+        <p>Eventos con repercusión global que atraen a millones de visitantes cada año.</p>
+      </article>
 
-  <!-- BLOQUE OPINIONES Y DATOS -->
-  <div>
+      <article>
+        <h3>Tradiciones Locales Destacadas</h3>
+        <p>Celebraciones arraigadas con un profundo valor histórico y antropológico.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="titulo-destacadas">
+      <h2 id="titulo-destacadas">Fiestas destacadas</h2>
+      <ul>
+        <li>Aste Nagusia de Bilbao</li>
+        <li>Feria de Sevilla</li>
+        <li>San Ferm&#237;n en Pamplona</li>
+        <li>Las Fallas de Valencia</li>
+        <li>Carnaval de C&#225;diz</li>
+        <li>Hogueras de Alicante</li>
+      </ul>
+
+      <h2>Enlaces de inter&#233;s</h2>
+      <p>Consulta la <a href="https://www.spain.info/es/consulta/fiestas-espana/" title="Portal oficial de turismo de España">web oficial de Turismo</a> y revisa nuestros <a href="puntuacionpersonal.html">resultados de puntuaci&#243;n</a>.</p>
+    </section>
+
+    <section aria-labelledby="titulo-multimedia">
+      <h2 id="titulo-multimedia">Multimedia y preguntas frecuentes</h2>
+
+      <article>
+        <h3>V&#237;deo de festividades</h3>
+        <video controls poster="c:\Users\Usuario1\Pictures\Screenshots\Captura de pantalla 2026-11-24 090501.png" width="600">
+          <source src="c:\Users\Usuario1\Downloads\videoplayback.mp4" type="video/mp4">
+          <source src="media/fiestas.webm" type="video/webm">
+          Tu navegador no soporta la reproducci&#243;n de v&#237;deo HTML5.
+        </video>
+      </article>
+
+      <article>
+        <h3>Preguntas frecuentes</h3>
+        <details open>
+          <summary>&#191;Qu&#233; estructura sem&#225;ntica usa este portal?</summary>
+          <p>Utiliza etiquetas como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt; y &lt;footer&gt;.</p>
+        </details>
+        <details>
+          <summary>&#191;Qu&#233; fiestas aparecen destacadas en la p&#225;gina?</summary>
+          <p>Aste Nagusia de Bilbao, Feria de Sevilla, San Ferm&#237;n en Pamplona, Las Fallas de Valencia, Carnaval de C&#225;diz y Hogueras de Alicante.</p>
+        </details>
+        <details>
+          <summary>&#191;D&#243;nde puedo consultar las puntuaciones y contactar?</summary>
+          <p>En las secciones de <a href="puntuaciones.html">Puntuaciones</a>, <a href="puntuacionpersonal.html">resultados de puntuaci&#243;n</a> y <a href="contacto.html">Contacto</a>.</p>
+        </details>
+      </article>
+    </section>
+  </main>
+
+  <aside aria-label="Rese&#241;as y Ficha T&#233;cnica">
     <h2>Rese&#241;as y Ficha T&#233;cnica</h2>
-    
     <blockquote>
       <p>&ldquo;La riqueza festiva de España es única en el mundo; puntuar y ordenar este patrimonio cultural ayuda a comprender mejor nuestra identidad.&rdquo;</p>
       <p>&mdash; Crítico de Turismo Cultural</p>
@@ -62,24 +103,8 @@ Creador:     Daniel Od&#237;n Carballido
 &#193;mbito:     Nacional &#40;&amp; Espa&#241;a&#41;
 Actualiza:   Diario &#40;2026/2027&#41;
     </pre>
+  </aside>
 
-    <h2>Fiestas destacadas</h2>
-    <ul>
-      <li>Aste Nagusia de Bilbao</li>
-      <li>Feria de Sevilla</li>
-      <li>San Ferm&#237;n en Pamplona</li>
-      <li>Las Fallas de Valencia</li>
-      <li>Carnaval de C&#225;diz</li>
-      <li>Hogueras de Alicante</li>
-    </ul>
-
-    <h2>Enlaces de inter&#233;s</h2>
-    <p>Consulta la <a href="https://www.spain.info/es/consulta/fiestas-espana/" title="Portal oficial de turismo de España">web oficial de Turismo</a> y revisa nuestros <a href="puntuacionpersonal.html">resultados de puntuaci&#243;n</a>.</p>
-  </div>
-
-  <!-- BLOQUE PIE DE PAGINA -->
   <footer>
-    <p>&#169; 2026 Daniel Od&#237;n Carballido Rodr&#237;guez. Todos los derechos reservados.</p>
-  </footer>
-</body>
-</html>
+    <p id="firma-odincarballido-byte">&#169; 2026 odincarballido-byte</p>
+    <p>&#169; 2026 Daniel Od&#237;
