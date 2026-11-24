@@ -1,108 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puntuaciones Oficiales | Fiestas de España</title>
-    <meta name="description" content="Desglose de puntuaciones y valoraciones técnicas de las fiestas populares de España.">
-    <meta name="author" content="Daniel Odín Carballido Rodríguez">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puntuaciones Oficiales | Fiestas de Espa&#241;a</title>
+  <meta name="description" content="Desglose de puntuaciones y valoraciones t&#233;cnicas de las fiestas populares de Espa&#241;a.">
+  <meta name="author" content="odincarballido-byte">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- BLOQUE CABECERA Y NAVEGACIÓN -->
-    <header>
-        <h1>Puntuaciones y Evaluaci&#243;n de Festivales</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="puntuaciones.html">Puntuaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Cabecera y navegacion principal -->
+  <header>
+    <p><strong>Fiestas de Espa&#241;a</strong></p>
+    <nav aria-label="Navegaci&#243;n principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="puntuaciones.html">Puntuaciones</a></li>
+        <li><a href="justificaciones.html">Justificaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <hr>
+  <main>
+    <section aria-labelledby="titulo-tabla">
+      <h1 id="titulo-tabla">Puntuaciones y Evaluaci&#243;n de Festivales</h1>
+      <p>A continuaci&#243;n se presenta la tabla comparativa con las valoraciones obtenidas por cada festividad analizada en nuestro portal &#40;con criterios de jurado y voto popular&#41;.</p>
 
-    <!-- BLOQUE CONTENIDO PRINCIPAL: TABLA DE DATOS -->
-    <main>
-        <section>
-            <h2>Desglose de Puntuaciones Oficiales &#40;Edici&#243;n 2026&#41;</h2>
-            <p>A continuaci&#243;n se presenta la tabla comparativa con las valoraciones obtenidas por cada festividad analizada en nuestro portal &#40;con criterios de jurado y voto popular&#41;.</p>
+      <article>
+        <h2>Desglose de Puntuaciones Oficiales &#40;Edici&#243;n 2026&#41;</h2>
 
-            <!-- TABLA DE DATOS DE FIESTAS -->
-            <table>
-                <caption>Desglose oficial de puntuaciones por festividad nacional</caption>
-                <colgroup>
-                    <col style="width: 25%;">
-                    <col span="2" style="width: 20%;">
-                    <col style="width: 15%;">
-                    <col style="width: 20%;">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th scope="col">Festival / Ciudad</th>
-                        <th scope="col">Jurado T&#233;cnico</th>
-                        <th scope="col">Voto Popular</th>
-                        <th scope="col">Penalizaciones</th>
-                        <th scope="col">Puntuaci&#243;n Final</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Aste Nagusia &#40;Bilbao&#41;</th>
-                        <td>48.5</td>
-                        <td>49.0</td>
-                        <td rowspan="2">0.0</td>
-                        <td>97.5</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Feria de Sevilla</th>
-                        <td>47.0</td>
-                        <td>48.5</td>
-                        <td>95.5</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">San Ferm&#237;n &#40;Pamplona&#41;</th>
-                        <td>46.0</td>
-                        <td>47.5</td>
-                        <td>-1.0</td>
-                        <td>92.5</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Las Fallas &#40;Valencia&#41;</th>
-                        <td>45.0</td>
-                        <td>47.5</td>
-                        <td>0.0</td>
-                        <td>92.5</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Hogueras de Alicante</th>
-                        <td>38.0</td>
-                        <td>40.0</td>
-                        <td>-0.2</td>
-                        <td>77.8</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Carnaval de C&#225;diz</th>
-                        <td>45.5</td>
-                        <td colspan="2">Evaluaci&#243;n especial unificada: 48.0 pts</td>
-                        <td>93.5</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th scope="row" colspan="4">Promedio General del Jurado y P&#250;blico</th>
-                        <td>91.55 pts</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-    </main>
+        <!-- Tabla de datos de puntuaciones por festividad -->
+        <table>
+          <caption>Desglose oficial de puntuaciones por festividad nacional</caption>
+          <colgroup>
+            <col>
+            <col span="2">
+            <col>
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Festival / Ciudad</th>
+              <th scope="col">Jurado T&#233;cnico</th>
+              <th scope="col">Voto Popular</th>
+              <th scope="col">Penalizaciones</th>
+              <th scope="col">Puntuaci&#243;n Final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Aste Nagusia &#40;Bilbao&#41;</th>
+              <td>48.5</td>
+              <td>49.0</td>
+              <td rowspan="2">0.0</td>
+              <td>97.5</td>
+            </tr>
+            <tr>
+              <th scope="row">Feria de Sevilla</th>
+              <td>47.0</td>
+              <td>48.5</td>
+              <td>95.5</td>
+            </tr>
+            <tr>
+              <th scope="row">San Ferm&#237;n &#40;Pamplona&#41;</th>
+              <td>46.0</td>
+              <td>47.5</td>
+              <td>-1.0</td>
+              <td>92.5</td>
+            </tr>
+            <tr>
+              <th scope="row">Las Fallas &#40;Valencia&#41;</th>
+              <td>45.0</td>
+              <td>47.5</td>
+              <td>0.0</td>
+              <td>92.5</td>
+            </tr>
+            <tr>
+              <th scope="row">Hogueras de Alicante</th>
+              <td>38.0</td>
+              <td>40.0</td>
+              <td>-0.2</td>
+              <td>77.8</td>
+            </tr>
+            <tr>
+              <th scope="row">Carnaval de C&#225;diz</th>
+              <td>45.5</td>
+              <td colspan="2">Evaluaci&#243;n especial unificada: 48.0 pts</td>
+              <td>93.5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="4">Promedio General del Jurado y P&#250;blico</th>
+              <td>91.55 pts</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
 
-    <hr>
-
-    <!-- BLOQUE PIE DE PAGINA -->
-    <footer>
-        <p>&#169; 2026 Daniel Od&#237;n Carballido Rodr&#237;guez. Todos los derechos reservados.</p>
-    </footer>
+      <article>
+        <h2>Justificaciones de cada fiesta</h2>
+        <p>Consulta el detalle argumentado de cada nota en la p&#225;gina de <a href="justificaciones.html">justificaciones oficiales</a>.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p id="firma-odincarballido-byte">&#169; 2026 odincarballido-byte</p>
+  </footer>
 </body>
 </html>
