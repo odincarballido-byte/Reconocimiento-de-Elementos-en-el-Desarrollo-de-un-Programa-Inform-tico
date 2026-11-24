@@ -1,108 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto y Reservas | Fiestas de España</title>
-    <meta name="description" content="Página de contacto oficial e inscripción para las Fiestas de España.">
-    <meta name="author" content="Daniel Odín Carballido Rodríguez">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Reservas | Fiestas de Espa&#241;a</title>
+  <meta name="description" content="P&#225;gina de contacto oficial e inscripci&#243;n para las Fiestas de Espa&#241;a.">
+  <meta name="author" content="odincarballido-byte">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- BLOQUE CABECERA Y NAVEGACIÓN -->
-    <header>
-        <h1>Contacto y Asistencia a las Fiestas</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="puntuaciones.html">Puntuaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <p><strong>Fiestas de Espa&#241;a</strong></p>
+    <nav aria-label="Navegaci&#243;n principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="puntuaciones.html">Puntuaciones</a></li>
+        <li><a href="justificaciones.html">Justificaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <hr>
+  <main>
+    <section aria-labelledby="titulo-contacto">
+      <h1 id="titulo-contacto">Contacto y Asistencia a las Fiestas</h1>
+      <p>Rellene el siguiente formulario para ponerse en contacto con la organizaci&#243;n o solicitar informaci&#243;n de las fiestas populares.</p>
 
-    <!-- BLOQUE FORMULARIO DE CONTACTO -->
-    <main>
-        <section>
-            <h2>Formulario de Inscripci&#243;n y Consultas</h2>
-            <p>Rellene el siguiente formulario para ponerse en contacto con la organizaci&#243;n o solicitar informaci&#243;n de las fiestas populares.</p>
+      <article>
+        <h2>Indicador de puntuaci&#243;n media de referencia</h2>
+        <p>Nivel de valoraci&#243;n de referencia en el cat&#225;logo &#40;7.2 sobre 10&#41;:</p>
+        <meter min="0" max="10" low="5" high="8" optimum="9" value="7.2">7.2 de 10</meter>
+      </article>
 
-            <!-- El formulario utiliza POST por seguridad, tras la prueba temporal con GET requerida -->
-            <form action="#" method="post">
-                
-                <!-- FIELDSET 1: DATOS PERSONALES -->
-                <fieldset>
-                    <legend>Tus Datos Personales</legend>
-                    
-                    <div>
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Od&#237;n Carballido" autofocus required minlength="3" maxlength="50">
-                    </div>
+      <article>
+        <h2>Formulario de Inscripci&#243;n y Consultas</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Tus Datos Personales</legend>
 
-                    <div>
-                        <label for="email">Correo electr&#243;nico:</label>
-                        <input type="email" id="email" name="email" placeholder="usuario&#64;email.com" required>
-                    </div>
+            <p>
+              <label for="email">Correo electr&#243;nico:</label>
+              <input type="email" id="email" name="email" placeholder="usuario@email.com" required>
+            </p>
 
-                    <div>
-                        <label for="telefono">Tel&#233;fono de contacto:</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="600123456" maxlength="9">
-                    </div>
-                </fieldset>
+            <p>
+              <label for="telefono">Tel&#233;fono de contacto:</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="600123456" required>
+            </p>
 
-                <!-- FIELDSET 2: PREFERENCIAS Y MENSAJE -->
-                <fieldset>
-                    <legend>Tu Consulta y Preferencias</legend>
+            <p>
+              <label for="fecha-visita">Fecha prevista de visita:</label>
+              <input type="date" id="fecha-visita" name="fecha_visita" min="2026-01-01" max="2027-12-31" required>
+            </p>
+          </fieldset>
 
-                    <div>
-                        <label for="festival-interes">Festival de inter&#233;s principal:</label>
-                        <select id="festival-interes" name="festival_interes" required>
-                            <option value="" disabled selected>-- Seleccione un festival --</option>
-                            <option value="fallas">Las Fallas &#40;Valencia&#41;</option>
-                            <option value="sevilla">Feria de Sevilla</option>
-                            <option value="sanfermin">San Ferm&#237;n &#40;Pamplona&#41;</option>
-                            <option value="astenagusia">Aste Nagusia &#40;Bilbao&#41;</option>
-                            <option value="hogueras">Hogueras de Alicante</option>
-                            <option value="cadiz">Carnaval de C&#225;diz</option>
-                        </select>
-                    </div>
+          <fieldset>
+            <legend>Tu Consulta y Valoraci&#243;n</legend>
 
-                    <div>
-                        <p>Tipo de asistencia prevista:</p>
-                        <label><input type="radio" name="tipo_asistencia" value="presencial" checked> Presencial</label>
-                        <label><input type="radio" name="tipo_asistencia" value="virtual"> Seguir online</label>
-                        <label><input type="radio" name="tipo_asistencia" value="prensa"> Acreditaci&#243;n de prensa</label>
-                    </div>
+            <p>
+              <label for="codigo-fiesta">C&#243;digo de fiesta del cat&#243;logo &#40;ej. F01 a F05&#41;:</label>
+              <input type="text" id="codigo-fiesta" name="codigo_fiesta" placeholder="F04" pattern="F[0-9]{2}" title="Escribe la letra F mayuscula seguida de dos digitos, por ejemplo F01 o F04" required>
+            </p>
 
-                    <div>
-                        <p>Desea recibir informaci&#243;n sobre:</p>
-                        <label><input type="checkbox" name="suscripcion_alertas" value="eventos" checked> Avisos de eventos</label>
-                        <label><input type="checkbox" name="suscripcion_alertas" value="precios"> Ofertas y alojamientos</label>
-                        <label><input type="checkbox" name="suscripcion_alertas" value="sorteos"> Sorteos de entradas</label>
-                    </div>
+            <p>
+              <label for="puntuacion-propuesta">Puntuaci&#243;n propuesta &#40;0 a 10, pasos de 0.5&#41;:</label>
+              <input type="number" id="puntuacion-propuesta" name="puntuacion_propuesta" min="0" max="10" step="0.5" value="7.5" required>
+            </p>
 
-                    <div>
-                        <label for="consulta">Escriba su mensaje o consulta:</label>
-                        <textarea id="consulta" name="consulta" rows="4" cols="50" placeholder="Escriba aqu&#237; los detalles de su solicitud..." required></textarea>
-                    </div>
-                </fieldset>
+            <p>
+              <label for="nivel-ambiente">Nivel de ambiente esperado &#40;1 a 10&#41;:</label>
+              <input type="range" id="nivel-ambiente" name="nivel_ambiente" min="1" max="10" step="1" value="8">
+            </p>
 
-                <!-- CONTROLES DE ENVIO Y RESETEO -->
-                <div>
-                    <button type="submit" name="submit">Enviar Solicitud</button>
-                    <button type="reset">Borrar Formulario</button>
-                </div>
+            <p>
+              <button type="submit" name="submit">Enviar Solicitud</button>
+              <button type="reset">Borrar Formulario</button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+  </main>
 
-            </form>
-        </section>
-    </main>
+  <aside aria-label="Informaci&#243;n adicional">
+    <h2>C&#243;digos disponibles</h2>
+    <p>F01 Sevilla &#40;8&#41;, F02 Bilbao &#40;9.5&#41;, F03 Pamplona &#40;7.5&#41;, F04 Alicante &#40;7.2&#41;, F05 C&#225;diz &#40;7.8&#41;.</p>
+  </aside>
 
-    <hr>
-
-    <!-- BLOQUE PIE DE PAGINA -->
-    <footer>
-        <p>&#169; 2026 Daniel Od&#237;n Carballido Rodr&#237;guez. Todos los derechos reservados.</p>
-    </footer>
+  <footer>
+    <p id="firma-odincarballido-byte">&#169; 2026 odincarballido-byte</p>
+  </footer>
 </body>
 </html>
